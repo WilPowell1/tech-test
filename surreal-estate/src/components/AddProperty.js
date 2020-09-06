@@ -24,14 +24,15 @@ const AddProperty = () => {
 
   const handleAddProperty = (event) => {
     event.defaultDefault();
-    axios.post('http://localhost:4000/api/v1/PropertyListing')
-      .then(() => setAlert({ message: "Property Added",
-      isSuccess: true,
-      })
-      .catch(() => setAlert({
+    axios.post("http://localhost:4000/api/v1/PropertyListing")
+    .then(() =>
+      setAlert({ message: "Property Added", isSuccess: true })
+    .catch(() =>
+      setAlert({
         message: "Server error. Please try again later",
-        isSuccess: isFalse,
-      })),
+        isSuccess: false,
+      })
+    ),
   );
 
   const handleFieldChange = (event) => {
@@ -171,7 +172,6 @@ const AddProperty = () => {
       </form>
     </div>
   );
-};
-
+}};
 
 export default AddProperty;
