@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    const items = [{
+        name: 'Bike',
+        price: 100
+    }, {
+        name: 'TV',
+        price: 200
+    }, {
+        name: 'Album',
+        price: 10
+    }, {
+        name: 'Book',
+        price: 5
+    }, {
+        name: 'Phone',
+        price: 500
+    }, {
+        name: 'Computer',
+        price: 1000
+    }, {
+        name: 'Keyboard',
+        price: 25
+    }]
+
+    const total = items.find(({
+        name
+    }) => name === 'Keyboard');
+
+    console.log(total);
+</script>
+
+</html>

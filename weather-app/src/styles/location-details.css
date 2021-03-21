@@ -1,0 +1,9 @@
+.location-details {
+    color: rgb(61, 61, 61);
+    font-size: 180%;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}

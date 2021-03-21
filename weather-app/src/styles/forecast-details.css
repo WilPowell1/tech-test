@@ -1,0 +1,21 @@
+.forecast-details {
+    background: rgb(20, 50, 180);
+    color: rgb(245, 236, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 220px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgb(51, 54, 54);
+    padding: 1% 0 1%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.detailed-date {
+    color: #fc913a;
+    font-size: 18px;
+    padding: 0 0 2%;
+}

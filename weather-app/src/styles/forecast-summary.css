@@ -1,0 +1,62 @@
+.forecast-summary {
+    background: rgb(20, 50, 180);
+    color: rgb(245, 236, 236);
+    display: flex;
+    flex-direction: column;
+    margin: auto 0.5% 3%;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+    width: 220px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgb(51, 54, 54);
+    transition: 170ms linear; 
+}
+
+.forecast-summary:hover {
+    border: 2px solid #fc913a;
+    transform: scale(1.04);
+}
+
+.date {
+    font-size: 20px;
+    color: #fc913a;
+}
+
+.temperature {
+    font-size: 60px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.icon {
+    font-size: 60px;
+}
+
+.more-details {
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 8px;
+    cursor: pointer;
+    color: #fc913a;
+    background: #fff;
+    border: 1px solid white;
+    transition: 200ms linear;
+}
+
+.more-details:hover {
+    background: #fc913a;
+    color: #fff;
+    border: 1px solid #fc913a;
+}   
+
+.more-details:active {
+    background: transparent;
+    border: 1px solid white;
+}

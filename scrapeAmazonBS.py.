@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+from bs4 import BeautifulSoup
+import requests
+
+headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
+url = 'https://www.amazon.co.uk/Best-Sellers-Books-Society-Politics-Philosophy/zgbs/books/60/ref=zg_bs_nav_b_1_b'
+'https://www.amazon.co.uk/Best-Sellers-Books-Science-Nature/zgbs/books/57/ref=zg_bs_nav_b_1_b'
+'https://www.amazon.co.uk/Best-Sellers-Books-Scientific-Technical-Medical/zgbs/books/564334/ref=zg_bs_nav_b_1_b' response=requests.get(url,headers=headers)
+
+soup=BeautifulSoup(response.content,'lxml')
+
+

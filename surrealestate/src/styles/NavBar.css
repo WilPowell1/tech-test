@@ -1,0 +1,22 @@
+.navbar {
+    background: white;
+}
+
+.navbar-links {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links-item {
+    margin: 0;
+    padding: 1.5%;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+input .placeholder {
+    color: gray;
+}

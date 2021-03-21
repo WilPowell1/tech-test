@@ -1,29 +1,55 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faBed, faBath, faPoundSign, faCity, faHome, faEnvelope, } from '@fortawesome/free-solid-svg-icons';
 
-const PropertyCard = () => {
+const PropertyCard = ({
+    _id,
+    title,
+    bedrooms,
+    bathrooms,
+    price,
+    email,
+    type,
+    city,
+    onSaveProperty,
+    userID, }) => {
   return (
-    <div className='Property'>
+    <div className="Property">
       <div data-testid="titleId" className="titleDiv">
-        Title
-      </div>
-      <div data-testid="typeId" className="typeDiv">
-        Type
+        title
       </div>
       <div data-testid="bedroomsId" className="bedroomsDiv">
-        Bedrooms
+        <FontAwesomeIcon className="icon" icon={faBed} />
+        bedrooms
       </div>
       <div data-testid="bathroomsId" className="bathroomsDiv">
-        Bathrooms
+        <FontAwesomeIcon className="icon" icon={faBath} />
+        bathrooms
+      </div>
+      <div data-testid="typeId" className="typeDiv">
+        <FontAwesomeIcon className="icon" icon={faHome} />
+        type
       </div>
       <div data-testid="priceId" className="priceDiv">
-        Price
+        <FontAwesomeIcon className="icon" icon={faPoundSign} />
+        price
       </div>
       <div data-testid="cityId" className="cityDiv">
-        City
+        <FontAwesomeIcon className="icon" icon={faCity} />
+        city
       </div>
       <div data-testid="emailId" className="emailDiv">
-        <a className="emailLink">Email</a>
+        <FontAwesomeIcon className="icon" icon={faEnvelope} />
+        <a className="emailLink">email</a>
+      </div>
+      <div>
+        {userID && (
+          <a href="#" className="save">
+            <i className="fas fa-star" />
+            Save
+          </a>
+        )}
       </div>
     </div>
   );
