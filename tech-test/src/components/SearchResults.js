@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 
 const SearchResults = ({ results }) => {
 
-const searchedImages = results.map((image) => 
+  const searchedImages = results.map((image) => 
     <img className="stock-image"
         alt="space"
         src={image}/>)
 
     if (!results.length) {
         return <p>No results</p>
-      } 
+      } else
           return (
 
             <div className="search-results">
@@ -20,7 +20,7 @@ const searchedImages = results.map((image) =>
               </>
             </div>
     )
-};
+  };
 
 SearchResults.propTypes = {
     results: PropTypes.array

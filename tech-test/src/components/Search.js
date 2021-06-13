@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Search.css';
 import getImages from '../requests/getImages'; 
 import PropTypes from 'prop-types';
+import { FaSearch } from "react-icons/fa";
 
 const Search = ({ setSearchResults }) => {
     const [value, setValue] = useState();
@@ -19,7 +20,7 @@ const Search = ({ setSearchResults }) => {
                     className="search-input"     
                     type="text" 
                     onChange={(event) => setValue(event.target.value)} />
-                <button             className="search-button"       type="submit">Search</button>
+                <button className="search-button" type="submit"><FaSearch /> </button>
             </form>
         </div>  
     );

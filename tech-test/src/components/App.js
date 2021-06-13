@@ -4,7 +4,7 @@ import Search from './Search';
 import SearchResults from './SearchResults';
 
 
-function App() {
+const App = () => {
 
   const [searchResults, setSearchResults] = useState([]);
 
