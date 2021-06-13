@@ -2,17 +2,10 @@ body {
     margin: 0;
     padding: 0;
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(
-          115deg,
-        rgb(1, 4, 44) 0%,
-        rgba(100, 115, 255, 1) 40%
-  );
-
+    font-family: 'Courier New', Courier, monospace
 }
 
 .search-results {
-    align-content: center;
     display: inline-block;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,9 +14,13 @@ body {
 }
 
 .stock-image {
-    padding: 0.3%;
+    padding: 0.2%;
     margin: 0.5%;
     width: 20%;
     height: 3%;
     box-shadow: 5px 5px 5px 5px black;
+}
+
+.no-results {
+    text-align: center;
 }

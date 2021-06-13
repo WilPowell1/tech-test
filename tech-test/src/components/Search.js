@@ -11,7 +11,7 @@ const Search = ({ setSearchResults }) => {
         event.preventDefault();
         setSearchResults(await getImages(value));
     }
-
+    
     return (
         <div className="search">
             <form className="search-form" 

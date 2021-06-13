@@ -10,7 +10,7 @@ const SearchResults = ({ results }) => {
         src={image}/>)
 
     if (!results.length) {
-        return <p>No results</p>
+        return <p className="no-results">No results</p>
       } else
           return (
 
